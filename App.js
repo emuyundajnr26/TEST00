@@ -11,12 +11,12 @@ setNumber(number - 1)
   }
   return (
     <View style={styles.container}>
-      <Text> <h1> IMUKS INTERNSHIP APP1</h1></Text>
+      <Text> <h1> IMUKS INTERNSHIP APP2</h1></Text>
       <Text><h1>COUNT ={number}</h1></Text>
       <Button title="COUNT" onPress={()=> counting()}></Button>
       <Button title ="COUNTDOWN" onPress={()=> countingdown()}></Button>
       <StatusBar style="auto" />
-    </View>
+    </View> 
   );
 }
 const styles = StyleSheet.create({
