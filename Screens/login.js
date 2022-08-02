@@ -15,7 +15,7 @@ export default function Login({ navigation }) {
       style={ styles.inputField} 
       placeholder = "username/Email"/></View>
       <View style={styles.fieldView}>
-        <TextInput style={ styles.inputField} placeholder = "Password" secureTextEntry/></View>
+        <TextInput style={ styles.inputField} placeholder= "Password" secureTextEntry/></View>
       <Button style = {styles.logButton}
         title="login"
        
