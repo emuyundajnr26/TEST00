@@ -19,7 +19,9 @@ export default function Login({ navigation }) {
         <TextInput style={ styles.inputField2} placeholder= "Password" secureTextEntry/>
         </View>
         <TouchableOpacity style={styles.logButton} >
-      <Button  title="login"/>     
+      <Text>
+        Login
+        </Text>     
         </TouchableOpacity>
       <TouchableOpacity>
         <Text style = {styles.touchableText}>forgot password?</Text>
@@ -80,8 +82,15 @@ inputField2: {
 },
 
 logButton: {
-backgroundColor: 'green',
-marginTop: 30,
+  height: 40,
+  width: "30%",
+  backgroundColor: "green",
+  textAlign: "center",
+  justifyContent: "center",
+  marginBottom: 20,
+  marginTop: 30,
+  borderRadius: 100,
+  marginTop: 35,
 },
 touchableText: {
   color: 'green',
