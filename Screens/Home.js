@@ -7,8 +7,8 @@ export default function Home({ navigation }) {
       <Text>WELCOME TO WEL-SAFE</Text>
       <Button
         title=" GET STARTED"
-        onPress={() => navigation.navigate("welcome")}
-      ></Button>
+        onPress={() => navigation.navigate("welcome")}>
+        </Button>
     </View>
   );
 }
