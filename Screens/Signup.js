@@ -5,11 +5,13 @@ import React from "react";
 export default function SignUp ({navigation}){
     return(
          <ImageBackground source={require('../assets/images/keys.jpg')} style={styles.main}> 
-                <Image source={require('../assets/images/imuk.jpg')} style={styles.headerImage} />
-        <Text style={styles.headerText}>WELCOME TO WEL-SAFE</Text>
-        <TouchableOpacity>
+        <Text style={styles.headerText}>WELCOME TO [Application Name]</Text>
+        <Text style={styles.subHeader}>
+        welcome to [Application name]. to sign up & register click the button below. we hope you enjoy your stay.
+        </Text>
+        <TouchableOpacity  style={styles.Button} >
         <Button
-        title="CLICK TO START" onPress={() => navigation.navigate("Welcome")} style={styles.Button} />
+        title="CLICK TO START" onPress={() => navigation.navigate("Welcome")}  />
         </TouchableOpacity>
         </ImageBackground>
     );
@@ -26,21 +28,22 @@ const styles = StyleSheet.create({
 
     Button: {
         backgroundColor: 'green',
+        marginTop: 35,
     },
     headerText: {
         fontSize: 35,
-        color: 'green',
+        color: 'black',
         fontWeight: 'bold',
         marginBottom: 75,
         letterSpacing: 1.2,
     },
-
-    headerImage: {
-        width: 60,
-        height: 60,
-        resizeMode: 'center',
-        opacity: 0.5,
-        flexDirection: 'row',
-        backgroundColor: 'grey',
-    },
+    subHeader: {
+        alingItems: 'center',
+        justifyContent: 'center',
+        fontSize: 27,
+        marginHorizontal: 15,
+        marginTop: 10,
+        marginBottom: 10,
+        letterSpacing: 1,
+    }
 })
