@@ -1,4 +1,4 @@
-import { StyleSheet, Button, Text,TextInput,TouchableOpacity, View, ImageBackground} from "react-native";
+import { StyleSheet, Button, Text,TextInput,TouchableOpacity, View, ImageBackground,} from "react-native";
 import React from "react";
 
 export default function Login({ navigation }) {
@@ -16,10 +16,11 @@ export default function Login({ navigation }) {
       placeholder = "username/Email"/>
       </View>
       <View style={styles.fieldView}>
-        <TextInput style={ styles.inputField2} placeholder= "Password" secureTextEntry/></View>
-      <Button style = {styles.logButton}
-        title="login">     
-        </Button>
+        <TextInput style={ styles.inputField2} placeholder= "Password" secureTextEntry/>
+        </View>
+        <TouchableOpacity style={styles.logButton} >
+      <Button  title="login"/>     
+        </TouchableOpacity>
       <TouchableOpacity>
         <Text style = {styles.touchableText}>forgot password?</Text>
       </TouchableOpacity>
@@ -40,41 +41,47 @@ const styles = StyleSheet.create({
     marginBottom: 50,
     fontsize: 95,
     letterSpacing: 2,
+    color: 'green',
   },
 subTitle: {
-  fontsize: 25,
+  fontsize: 28,
   marginBottom: 20,
+  color: 'green',
 },
 fieldView: {
     width: "30%",
     height: "6%",
     backgroundColor: "#fff",
-    margin: 10,
+    margin: 25,
 },
 inputField1: {
-    borderWidth: 1,
-    borderColor: "black",
+    borderWidth: 2,
+    borderColor: '#e8e8e8',
     backgroundColor: "#fff",
     width: "100%",
     height:"100%",
-    borderRadius: 10,
+    borderRadius: 5,
     textAlign:"center",
-    padding: 20,
-    
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingHorizontal: 5,
 },
 inputField2: {
-  borderWidth: 1,
-  borderColor: "black",
+  borderWidth: 2,
+  borderColor: '#e8e8e8',
   backgroundColor: "#fff",
   width: "100%",
   height:"100%",
-  borderRadius: 10,
+  borderRadius: 5,
   textAlign:"center",
-  padding: 20,
+  paddingTop: 5,
+  paddingBottom: 5,
+  paddingHorizontal: 5,
 },
 
 logButton: {
 backgroundColor: 'green',
+marginTop: 30,
 },
 touchableText: {
   color: 'green',
