@@ -10,8 +10,9 @@ export default function SignUp ({navigation}){
         welcome to [Application name]. to sign up & register click the button below. we hope you enjoy your stay.
         </Text>
         <TouchableOpacity  style={styles.Button} >
-        <Button
-        title="CLICK TO START" onPress={() => navigation.navigate("Welcome")}  />
+        <Text onPress={() => navigation.navigate("Welcome")}>
+            Get Started
+        </Text>
         </TouchableOpacity>
         </ImageBackground>
     );
@@ -27,7 +28,14 @@ const styles = StyleSheet.create({
     },
 
     Button: {
-        backgroundColor: 'green',
+        height: 40,
+        width: "50%",
+        backgroundColor: "green",
+        textAlign: "center",
+        justifyContent: "center",
+        marginBottom: 20,
+        marginTop: 20,
+        borderRadius: 100,
         marginTop: 35,
     },
     headerText: {
