@@ -4,11 +4,11 @@ import React from "react";
 export default function Home({ navigation }) {
   return (
     <View style={styles.main}>
-      <Text>WELCOME HOME</Text>
+      <Text>WELCOME TO WEL-SAFE</Text>
       <Button
-        title="CLICK "
-        onPress={() => navigation.navigate("welcome")}
-      ></Button>
+        title=" GET STARTED"
+        onPress={() => navigation.navigate("welcome")}>
+        </Button>
     </View>
   );
 }
